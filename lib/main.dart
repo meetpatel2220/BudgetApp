@@ -24,18 +24,18 @@ class _MyAppState extends State<MyApp> {
     }).toList();
   }
 
-  String xx;
-  double yy;
-  DateTime zz;
+  String title1;
+  double amount1;
+  DateTime dates1;
   void addValue(String title, double amount, DateTime dates) {
     setState(() {
       if (title == null) {
-        xx = 'null';
+        title1 = 'null';
       } else {
-        xx = title;
-        yy = amount;
-        zz = dates;
-        _listdata.add(Transaction(id: 't1', amount: yy, date: zz, title: xx));
+        title1 = title;
+        amount1 = amount;
+        dates1 = dates;
+        _listdata.add(Transaction(id: 't1', amount: amount1, date: dates1, title: title1));
       }
     });
   }
